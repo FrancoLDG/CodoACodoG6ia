@@ -4,7 +4,7 @@
 }
 
 #Page{
-    background-color: beige; /* color solo para visualizar los box*/
+    background-color: rgb(255, 255, 255); /* color solo para visualizar los box*/
 }
 
 
@@ -23,4 +23,25 @@
 .lista-horizontal li{
     display: inline-block;
     margin-right: 10px; /*espacio entre elementos */
+}
+
+.Novedades{
+    background-color: rgb(255, 255, 255);
+    color: #ffffff;
+}
+
+.Logo{
+    width: 50%;
+    height: 50vh;
+    overflow: hidden;
+    align-self: center;
+}
+
+.Logo img{
+    margin: 0 auto;
+    display: block;
+    width: 50%;
+    height: 40vh;
+    max-height: 40vh;
+
 }
