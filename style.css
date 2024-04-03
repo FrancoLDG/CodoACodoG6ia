@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#Page{
+    background-color: beige; /* color solo para visualizar los box*/
+}
+
+
+
+
+#info{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.lista-horizontal{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.lista-horizontal li{
+    display: inline-block;
+    margin-right: 10px; /*espacio entre elementos */
+}
