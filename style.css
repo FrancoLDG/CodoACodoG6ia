@@ -54,7 +54,7 @@ body {
 .fila {
     width: calc(50% - 20px); /* Ancho del 50% del contenedor */
     margin-bottom: 20px;
-    background-color: #05F2F2;
+    background-color: #f2f7f7;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     overflow: hidden;
