@@ -1,47 +1,91 @@
-*{
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #0d144b;
 }
 
-#Page{
-    background-color: rgb(255, 255, 255); /* color solo para visualizar los box*/
+#Page {
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
+#header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
 
-
-
-#info{
+#info {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
 }
 
-.lista-horizontal{
+.lista-horizontal {
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
-.lista-horizontal li{
-    display: inline-block;
-    margin-right: 10px; /*espacio entre elementos */
+
+.lista-horizontal li {
+    display: inline;
+    margin-right: 20px;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
 }
 
-.Novedades{
-    background-color: rgb(255, 255, 255);
-    color: #ffffff;
-}
-
-.Logo{
-    width: 50%;
-    height: 50vh;
-    overflow: hidden;
-    align-self: center;
-}
-
-.Logo img{
-    margin: 0 auto;
+.Logo img {
     display: block;
-    width: 50%;
-    height: 40vh;
-    max-height: 40vh;
+    margin: 20px auto;
+    max-width: 100%;
+    height: 300px;
+}
 
+.Novedades {
+    display: flex;
+    justify-content: space-between; /* Ajuste el espacio entre las noticias */
+    flex-wrap: wrap; /* Permita que las noticias se envuelvan en filas */
+}
+
+.fila {
+    width: calc(50% - 20px); /* Ancho del 50% del contenedor */
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 3px;
+    margin: 3px;
+}
+
+.Noticias {
+    list-style-type: none;
+    padding: 3px;
+    margin: 3px;
+   
+}
+
+.Noticias li {
+    width: 100%;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.Noticias li img {
+    display: block;
+    width: 100%;
+    height: 300px;
+    border-radius: 5px 5px 0 0;
+}
+
+.Noticias li p {
+    padding: 10px;
+    font-size: 14px;
+    color: #333;
+    text-align: left;
 }
