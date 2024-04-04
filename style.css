@@ -89,3 +89,51 @@ body {
     color: #333;
     text-align: left;
 }
+
+.Videos-Titulo{
+    text-align: center;
+    color: #fff;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background-color: #0e0833;
+    padding: 7px;
+    border-radius: 8px;
+}
+
+.videos-seccion {
+    display: flex;
+    margin-top: 20px;
+    background-color: #1f1175;
+    color: #fff;
+    padding: 20px;
+}
+
+.video-principal {
+    width: 70%;
+    padding-right: 20px;
+    height: 500px;
+    border-radius: 10px, 10px, 10px, 10px;
+    overflow: hidden;
+    margin-top: 140px;
+}
+
+.videos-secundarios {
+    width: 50%;
+    height: 100px;
+    padding-left: 10px;
+    height: 500px;
+}
+
+.lista-videos {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.lista-videos li {
+    margin-bottom: 10px;
+}
