@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&display=swap');
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Hind Madurai', Arial, sans-serif; /* Cambié la fuente predeterminada */
     margin: 0;
     padding: 0;
     background-color: #024059;
@@ -44,15 +45,38 @@ body {
     max-width: 100%;
     height: 300px;
 }
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.logos {
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.logos-slide{
+    display: inline-block;
+    
+    animation: slide 50s infinite linear;
+}
+
+.logos-slide img {
+     height: 30px;
+}
 
 .Novedades {
     display: flex;
-    justify-content: space-between; /* Ajuste el espacio entre las noticias */
-    flex-wrap: wrap; /* Permita que las noticias se envuelvan en filas */
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .fila {
-    width: calc(50% - 20px); /* Ancho del 50% del contenedor */
+    width: calc(50% - 20px);
     margin-bottom: 20px;
     background-color: #05F2F2;
     border-radius: 5px;
@@ -66,11 +90,9 @@ body {
     list-style-type: none;
     padding: 3px;
     margin: 3px;
-   
 }
 
 .Noticias li {
-    width: 100%;
     background-color: #F2F2F2;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -91,10 +113,10 @@ body {
     text-align: left;
 }
 
-.Videos-Titulo{
+.Videos-Titulo {
     text-align: center;
     color: #fff;
-    margin-top: 20px;
+    margin-top: 20px;?
     margin-bottom: 20px;
     font-size: 20px;
     font-weight: bold;
@@ -117,14 +139,13 @@ body {
     width: 70%;
     padding-right: 20px;
     height: 500px;
-    border-radius: 10px, 10px, 10px, 10px;
+    border-radius: 10px; /* Corregí el error en la propiedad border-radius */
     overflow: hidden;
     margin-top: 140px;
 }
 
 .videos-secundarios {
-    width: 50%;
-    height: 100px;
+    width: 50%; /* Corregí el error en la propiedad width */
     padding-left: 10px;
     height: 500px;
 }
@@ -138,3 +159,42 @@ body {
 .lista-videos li {
     margin-bottom: 10px;
 }
+
+.searchbar {
+    position: relative;
+    justify-self: flex-end;
+    display: flex;
+    top: 50px;
+    right: .2rem;
+    width: 250px;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.btns {
+    position: relative;
+    top: -2.5rem;
+    display: flex;
+    justify-content: flex-end;
+    right: 0.2rem;
+}
+    
+.login {
+    background-color: #F28705;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.signup {
+    background-color: #05F2F2;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
