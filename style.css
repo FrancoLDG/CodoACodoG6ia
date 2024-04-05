@@ -62,7 +62,7 @@ body {
 .logos-slide{
     display: inline-block;
     
-    animation: slide 50s infinite linear;
+    animation: slide 35s infinite linear;
 }
 
 .logos-slide img {
@@ -198,3 +198,9 @@ body {
     text-decoration: none;
 }
 
+.footer {
+    background-color: #0e0833;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
