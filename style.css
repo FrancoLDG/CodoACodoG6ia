@@ -54,19 +54,19 @@ body {
     }
 }
 
-.logos {
+.titulos {
     overflow: hidden;
     white-space: nowrap;
 }
 
 .logos-slide{
     display: inline-block;
-    
-    animation: slide 35s infinite linear;
+    padding: 0;
+    animation: slide 40s infinite linear;
 }
 
-.logos-slide img {
-     height: 30px;
+.titulos-slide img {
+     height: 50px;
 }
 
 .Novedades {
