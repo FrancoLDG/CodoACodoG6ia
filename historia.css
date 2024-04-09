@@ -1,13 +1,14 @@
 .cuadro-desplegable {
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 15px;
     margin-bottom: 10px;
     width: 768px;
 }
 
 #titulo-historia {
-    font-size: 40px;
-    color: white;
+    font-size: 36px;
+    color: black;
+
 }
 
 .titulo {
@@ -18,6 +19,7 @@
     user-select: none;
     text-align: center;
     font-size: 1.5em;
+    border-radius: 15px;
     /* Evita que el texto se seleccione al hacer clic */
 }
 
@@ -65,4 +67,7 @@
     flex-direction: column;
     align-items: center;
     text-align: justify;
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+    background-color: rgb(36, 111, 86);
 }
