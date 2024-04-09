@@ -36,35 +36,84 @@
             <img src="./imagenes/png/logoia3.png" width=800 alt="">
 
         </div>
-        <section id="historia">
-            <h3>Breve historia</h3>
-            <h4>Precursores y primeros pasos. (1940s-1950):</h4>
-            <p>La historia de la inteligencia artificial (IA) comienza mucho antes de la acuñación del término en 1956.
-                A principios de la década de 1940, Warren McCulloch y Walter Pitts sentaron las bases con su modelo de
-                neuronas artificiales, inspirándose en el funcionamiento del cerebro humano. Alan Turing, considerado el
-                padre de la IA, consolidó el campo con su famoso artículo "Computing Machinery and Intelligence" en
-                1950, donde propuso la Prueba de Turing para medir la inteligencia de una máquina.</p>
-            <h4>El amanecer de la IA. (1956-1970s):</h4>
-            <p>En 1956, John McCarthy organizó la Conferencia de Dartmouth, considerada el evento fundacional de la IA.
-                Allí, se reunieron pioneros como Marvin Minsky y Newell y Simon para discutir la posibilidad de crear
-                máquinas inteligentes. La década de 1960 vio un gran optimismo y avances en áreas como el procesamiento
-                del lenguaje natural (PLN) y el aprendizaje automático (ML).</p>
-            <h4>Auge y caida. (1970s-1980s):</h4>
-            <p>A pesar del progreso inicial, la década de 1970 llegó con un "invierno de la IA" debido a la dificultad
-                de alcanzar las expectativas optimistas. La falta de recursos computacionales y la complejidad de los
-                problemas de IA limitaron el desarrollo. Sin embargo, algunos avances importantes en áreas como el
-                razonamiento simbólico y la visión artificial se lograron durante este período.</p>
-            <h4>Renacimiento y expansión. (1990s-2000s):</h4>
-            <p>El resurgimiento de la IA comenzó en la década de 1990 con la llegada de nuevos algoritmos, mayor
-                potencia computacional y la disponibilidad de grandes conjuntos de datos. El desarrollo de Internet y la
-                World Wide Web impulsaron aún más la investigación en IA, abriendo nuevas posibilidades en áreas como la
-                búsqueda web, el comercio electrónico y la robótica.</p>
-            <h4>Evolución y convergencia. (2010s-Actualidad)</h4>
-            <p>En la actualidad, la IA se encuentra en un estado de rápida evolución y convergencia con otras
-                tecnologías como el Big Data, la robótica y el Internet de las Cosas (IoT). La explosión del aprendizaje
-                profundo ha impulsado avances sin precedentes en áreas como el reconocimiento de imágenes, el
-                procesamiento del lenguaje natural y la traducción automática.</p>
+        <section>
+            <div class="contenedor">
+                <h2 id="titulo-historia">Breve historia y evolucion de la IA</h2>
+                <div class="cuadro-desplegable">
+                    <div class="titulo" onclick="toggleTexto(1)">Precursores y Primeros Pasos (1940s - 1950s): <span
+                            id="icono1" class="icono">+</span></div>
+                    <div class="contenido" id="contenidoTexto1">
+                        <p>La historia de la inteligencia artificial (IA) comienza mucho antes de la acuñación del
+                            término
+                            en 1956. A principios de la década de 1940, Warren McCulloch y Walter Pitts sentaron las
+                            bases
+                            con su modelo de neuronas artificiales, inspirándose en el funcionamiento del cerebro
+                            humano.
+                            Alan Turing, considerado el padre de la IA, consolidó el campo con su famoso artículo
+                            "Computing
+                            Machinery and Intelligence" en 1950, donde propuso la Prueba de Turing para medir la
+                            inteligencia de una máquina.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="cuadro-desplegable">
+                    <div class="titulo" onclick="toggleTexto(2)">El Amanecer de la IA (1956 - 1970s): <span id="icono2"
+                            class="icono">+</span></div>
+                    <div class="contenido" id="contenidoTexto2">
+                        <p>En 1956, John McCarthy organizó la Conferencia de Dartmouth, considerada el evento
+                            fundacional de
+                            la IA. Allí, se reunieron pioneros como Marvin Minsky y Newell y Simon para discutir la
+                            posibilidad de crear máquinas inteligentes. La década de 1960 vio un gran optimismo y
+                            avances en
+                            áreas como el procesamiento del lenguaje natural (PLN) y el aprendizaje automático (ML).
+                        </p>
+                    </div>
+                </div>
+                <div class="cuadro-desplegable">
+                    <div class="titulo" onclick="toggleTexto(3)">Auge y Caída (1970s - 1980s): <span id="icono3"
+                            class="icono">+</span></div>
+                    <div class="contenido" id="contenidoTexto3">
+                        <p>A pesar del progreso inicial, la década de 1970 llegó con un "invierno de la IA" debido a la
+                            dificultad de alcanzar las expectativas optimistas. La falta de recursos computacionales y
+                            la
+                            complejidad de los problemas de IA limitaron el desarrollo. Sin embargo, algunos avances
+                            importantes en áreas como el razonamiento simbólico y la visión artificial se lograron
+                            durante
+                            este período.
+                        </p>
+                    </div>
+                </div>
+                <div class="cuadro-desplegable">
+                    <div class="titulo" onclick="toggleTexto(4)">Renacimiento y Expansión (1990s - 2000s): <span
+                            id="icono4" class="icono">+</span></div>
+                    <div class="contenido" id="contenidoTexto4">
+                        <p>El resurgimiento de la IA comenzó en la década de 1990 con la llegada de nuevos algoritmos,
+                            mayor
+                            potencia computacional y la disponibilidad de grandes conjuntos de datos. El desarrollo de
+                            Internet y la World Wide Web impulsaron aún más la investigación en IA, abriendo nuevas
+                            posibilidades en áreas como la búsqueda web, el comercio electrónico y la robótica.
+                        </p>
+                    </div>
+                </div>
+                <div class="cuadro-desplegable">
+                    <div class="titulo" onclick="toggleTexto(5)">Evolución y Convergencia (2010s - Presente): <span
+                            id="icono5" class="icono">+</span>
+                    </div>
+                    <div class="contenido" id="contenidoTexto5">
+                        <p>En la actualidad, la IA se encuentra en un estado de rápida evolución y convergencia con
+                            otras
+                            tecnologías como el Big Data, la robótica y el Internet de las Cosas (IoT). La explosión del
+                            aprendizaje profundo ha impulsado avances sin precedentes en áreas como el reconocimiento de
+                            imágenes, el procesamiento del lenguaje natural y la traducción automática.
+                        </p>
+                    </div>
+                </div>
+                <!-- Repetir para los demás cuadros -->
+            </div>
+
         </section>
+
         <div class="logos">
             <div class="logos-slide">
                 <img src="./imagenes/png/zocalo.png" alt="">
@@ -168,6 +217,7 @@
     <footer class="footer">
         <p>Copyright &copy; 2024. Todos los derechos reservados.</p>
     </footer>
+    <script src="historia.js"></script>
 </body>
 
 </html>

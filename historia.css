@@ -1,5 +1,68 @@
-#historia {
+.cuadro-desplegable {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    width: 768px;
+}
+
+#titulo-historia {
+    font-size: 40px;
     color: white;
+}
+
+.titulo {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    user-select: none;
+    text-align: center;
+    font-size: 1.5em;
+    /* Evita que el texto se seleccione al hacer clic */
+}
+
+.contenido {
+    display: none;
+    /* Inicialmente oculto */
+    padding: 10px;
+    color: white;
+
+}
+
+.contenido.mostrar {
+    display: block;
+    background-color: #024059;
+    font-size: 1.2em;
+    /* Se muestra cuando está activo */
+}
+
+@media screen and (max-width: 777px) {
+    .cuadro-desplegable {
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        width: 360px;
+    }
+
+    .titulo {
+        font-size: 0.9em;
+    }
+
+    .contenido.mostrar {
+        display: block;
+        background-color: #024059;
+        font-size: 0.8em;
+        /* Se muestra cuando está activo */
+    }
+}
+
+.icono {
+    float: right;
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: justify;
-    padding: 5px;
 }
