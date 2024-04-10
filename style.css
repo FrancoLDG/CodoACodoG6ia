@@ -269,6 +269,49 @@ body {
     text-decoration: none;
 }
 
+.separador-ias h3 {
+    color: #fff;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background-color: #0e0833;
+    padding: 7px;
+    border-radius: 8px;
+}
+
+.ia-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    
+}
+
+.ia-container .ia-box{
+    position: relative;
+    padding: 10px;
+    text-align: center;
+    border-radius: 1rem;
+    
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.ia-container img {
+    
+    height: 200px;
+    width: 330px;
+    margin-bottom: 10px;
+    object-fit: fill;
+    border-radius: 1rem;
+}
+
 .footer {
 
     background-color: #0e0833;
