@@ -49,6 +49,16 @@ body {
     height: 300px;
 }
 
+.contenedor h2{
+    color: #1a1919;
+    font-size: 30px;
+    background-color: #1f1175;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 10px;
+    border-radius: 1rem;
+}
+
 @keyframes slide {
     from {
         transform: translateX(0);
