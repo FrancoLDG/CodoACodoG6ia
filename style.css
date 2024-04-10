@@ -49,6 +49,16 @@ body {
     height: 300px;
 }
 
+.contenedor h2{
+    color: #1a1919;
+    font-size: 30px;
+    background-color: #1f1175;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 10px;
+    border-radius: 1rem;
+}
+
 @keyframes slide {
     from {
         transform: translateX(0);
@@ -92,30 +102,61 @@ body {
 }
 
 .Noticias {
-    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
     padding: 3px;
     margin: 3px;
+    background-color: #0bbcbc;
+
+
+    border: 5px solid #fff;
+    /* Define el grosor y el color del borde */
+    border-radius: 10px;
+    /* Opcional: para agregar esquinas redondeadas */
+    padding: 5px;
+    /* Opcional: agrega espacio entre el borde y la imagen */
 }
 
-.Noticias li {
-    background-color: #F2F2F2;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
+.news {
+    width: 390px;
+    text-align: justify;
 }
 
-.Noticias li img {
-    display: block;
-    width: 100%;
-    height: 300px;
-    border-radius: 5px 5px 0 0;
+.newsCuadro {
+
+    border: 1px solid white;
+    border-radius: 15px;
+    padding: 15px;
+    margin: 3px;
+
 }
 
-.Noticias li p {
-    padding: 10px;
-    font-size: 14px;
-    color: #333;
-    text-align: left;
+.Noticias img {
+    max-width: 500px;
+    padding: 3px;
+    margin: 3px;
+
+}
+
+@media only screen and (max-width: 767px) {
+    .Noticias {
+        max-width: 390px;
+        padding: 10px;
+    }
+
+    .Noticias img {
+        max-width: 370px;
+    }
+
+    .newsCuadro {
+        border-width: 0;
+    }
+
+    .news {
+        max-width: 370px;
+    }
 }
 
 .Videos-Titulo {
@@ -133,6 +174,7 @@ body {
 }
 
 .videos-seccion {
+
     display: flex;
     margin-top: 20px;
     background-color: #1f1175;
@@ -140,32 +182,54 @@ body {
     padding: 20px 20px 50px;
 }
 
-.video-principal {
-    width: 70%;
-    padding-right: 20px;
-    height: 500px;
-    border-radius: 10px;
-    /* Corregí el error en la propiedad border-radius */
-    overflow: hidden;
-    margin-top: 140px;
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    /* Dos columnas de tamaño automático */
+    gap: 10px;
+    /* Espacio entre las celdas */
 }
 
-.videos-secundarios {
-    width: 50%;
-    /* Corregí el error en la propiedad width */
-    padding-left: 10px;
-    height: 500px;
+
+/* Estilos para los elementos */
+.item1 {
+    grid-column: 1 / 2;
+    /* Ocupa la primera columna */
 }
 
-.lista-videos {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
+.item2,
+.item3,
+.item4 {
+    grid-column: 2 / 3;
+    /* Ocupa la segunda columna */
 }
 
-.lista-videos li {
-    margin-bottom: 10px;
+@media only screen and (max-width: 767px) {
+
+    .video-container iframe {
+        width: 100%;
+        /* Ajusta el ancho del iframe al 100% del contenedor */
+        height: auto;
+        /* La altura se ajustará automáticamente para mantener la proporción */
+    }
+
+    .grid-container {
+        grid-template-columns: auto;
+        /* Una sola columna de tamaño automático */
+    }
+
+    /* Ajusta el ancho de los items para que ocupen una sola columna */
+    .item1,
+    .item2,
+    .item3,
+    .item4 {
+        grid-column: auto;
+        /* Resetear el número de columna para que ocupen el ancho completo */
+    }
 }
+
 
 .searchbar {
     position: relative;
@@ -206,8 +270,10 @@ body {
 }
 
 .footer {
+
     background-color: #0e0833;
     color: #fff;
     text-align: center;
     padding: 10px;
+    margin-bottom: 0;
 }

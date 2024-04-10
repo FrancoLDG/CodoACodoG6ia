@@ -7,7 +7,7 @@
 
 #titulo-historia {
     font-size: 36px;
-    color: black;
+    color: rgb(248, 245, 245);
 
 }
 
@@ -69,5 +69,5 @@
     text-align: justify;
     margin-bottom: 50px;
     padding-bottom: 50px;
-    background-color: rgb(36, 111, 86);
+    background-color: rgb#0388A6;
 }
