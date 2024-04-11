@@ -42,6 +42,12 @@ body {
     cursor: pointer;
 }
 
+.Notic-IA {
+    padding-top: 30px;
+    text-align: center;
+}
+
+
 .Logo img {
     display: block;
     margin: 20px auto;
