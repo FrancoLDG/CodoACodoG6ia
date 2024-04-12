@@ -82,18 +82,12 @@ body {
 
 .logos-slide {
     display: inline-block;
-    white-space: nowrap;
+
     animation: slide 35s infinite linear;
 }
 
 .logos-slide img {
     height: 40px;
-    margin: 10px;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    padding: 3px;
-    margin: 3px;
 }
 
 .Novedades {
@@ -280,8 +274,8 @@ body {
     border-radius: 5px;
     text-decoration: none;
 }
-
-.separador-ias h3 {
+<!-- Repetir para los demás cuadros -->
+ .separador-ias h3 {
     color: #fff;
     text-align: center;
     margin-top: 20px;
@@ -294,7 +288,7 @@ body {
     padding: 7px;
     border-radius: 8px;
 }
-
+<!-- Repetir para los demás cuadros -->
 .ia-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
