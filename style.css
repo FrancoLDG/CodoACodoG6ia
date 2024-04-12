@@ -55,7 +55,7 @@ body {
     height: 300px;
 }
 
-.contenedor h2{
+.contenedor h2 {
     color: #1a1919;
     font-size: 30px;
     background-color: #1f1175;
@@ -64,6 +64,8 @@ body {
     margin-bottom: 10px;
     border-radius: 1rem;
 }
+
+
 
 @keyframes slide {
     from {
@@ -274,7 +276,8 @@ body {
     border-radius: 5px;
     text-decoration: none;
 }
- .separador-ias h3 {
+
+.separador-ias h3 {
     color: #fff;
     text-align: center;
     margin-top: 20px;
@@ -287,6 +290,7 @@ body {
     padding: 7px;
     border-radius: 8px;
 }
+
 .ia-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -294,21 +298,21 @@ body {
     align-items: center;
     justify-content: center;
     margin-top: 20px;
-    
+
 }
 
-.ia-container .ia-box{
+.ia-container .ia-box {
     position: relative;
     padding: 10px;
     text-align: center;
     border-radius: 1rem;
-    
+
     overflow: hidden;
     margin-bottom: 10px;
 }
 
 .ia-container img {
-    
+
     height: 200px;
     width: 330px;
     margin-bottom: 10px;
@@ -323,6 +327,6 @@ body {
     text-align: center;
     padding: 10px;
     margin-bottom: 0;
-    
-    
+
+
 }
