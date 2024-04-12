@@ -274,7 +274,6 @@ body {
     border-radius: 5px;
     text-decoration: none;
 }
-<!-- Repetir para los demás cuadros -->
  .separador-ias h3 {
     color: #fff;
     text-align: center;
@@ -288,7 +287,6 @@ body {
     padding: 7px;
     border-radius: 8px;
 }
-<!-- Repetir para los demás cuadros -->
 .ia-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
