@@ -9,6 +9,17 @@ body {
     padding: 0;
     background-color: #024059;
 }
+.svglogIA-container{
+    padding-top: 30px;
+    text-align: center;
+    max-width: 100px; /* Establece el ancho máximo */
+     height: auto;
+}
+
+.svglogIA-container svg {
+    display: inline-block;
+}
+
 
 #Page {
     max-width: 1200px;
@@ -47,12 +58,6 @@ body {
     text-transform: uppercase;
     cursor: pointer;
 }
-
-.Notic-IA {
-    padding-top: 30px;
-    text-align: center;
-}
-
 
 .Logo img {
     display: block;
