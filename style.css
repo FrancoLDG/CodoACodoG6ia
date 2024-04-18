@@ -16,11 +16,17 @@ body {
 }
 
 #header {
-    background-color: #3333FF;
+    background-color: #12265f;
     color: #fff;
     padding: 10px 0;
     text-align: center;
 }
+
+.lista-horizontal a{
+    color: #fff;
+    text-decoration: none;
+}
+
 
 #info {
     display: flex;
@@ -42,7 +48,7 @@ body {
     cursor: pointer;
 }
 
-.log-IA {
+.Notic-IA {
     padding-top: 30px;
     text-align: center;
 }
@@ -101,7 +107,7 @@ body {
 .fila {
     width: calc(50% - 20px);
     margin-bottom: 20px;
-    background-color: #f3f5f5;
+    background-color: #05F2F2;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     overflow: hidden;
@@ -116,7 +122,7 @@ body {
     justify-content: space-around;
     padding: 3px;
     margin: 3px;
-    background-color: #0bbcbc7a;
+    background-color: #0bbcbc;
 
 
     border: 5px solid #fff;
@@ -134,17 +140,45 @@ body {
 
 .newsCuadro {
 
-    border: 1px solid white;
+    border: 1px solid #12265f;
     border-radius: 15px;
     padding: 15px;
     margin: 3px;
+    width: 470px;
+}
 
+.newsCuadro h3 {
+    text-align: center;
+    color: #fff;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: .3px;
+    background-color: #12265f;
+    padding: 7px;
+    border-radius: 8px;
+}   
+.newsCuadro p{
+    text-align: justify;
+    color: #12265f;
+    margin-top: 20px;
+    margin-bottom: 20px;
+   
 }
 
 .Noticias img {
     max-width: 500px;
+    width: 450px;
+    height: 300px;
     padding: 3px;
+    text-align: center;
     margin: 3px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+    object-position: center;
 
 }
 
@@ -319,6 +353,162 @@ body {
     object-fit: fill;
     border-radius: 1rem;
 }
+/* Estilos para el botón hover */
+.ia-container img:hover {
+    filter: brightness(50%); /* Oscurece la imagen al 50% */
+    cursor: pointer; /* Cambia el cursor a un puntero al pasar el mouse sobre la imagen */
+    position: relative; /* Establece la posición relativa para poder posicionar el botón */
+}
+
+/* Estilos para el botón */
+.ia-container img:hover::after {
+    content: 'Ver más'; /* Texto del botón */
+    position: absolute; /* Establece la posición absoluta para posicionar el botón */
+    top: 50%; /* Lo coloca en la mitad superior de la imagen */
+    left: 50%; /* Lo coloca en el centro horizontalmente de la imagen */
+    transform: translate(-50%, -50%); /* Lo mueve hacia arriba y hacia la izquierda para centrarlo */
+    background-color: rgba(255, 255, 255, 0.5); /* Color de fondo semi-transparente para el botón */
+    padding: 10px; /* Añade espacio alrededor del texto */
+    border-radius: 5px; /* Redondea las esquinas del botón */
+}
+
+/* Estilos para el botón hover cuando está siendo clickeado */
+.ia-container img:hover::after:active {
+    background-color: rgba(255, 255, 255, 0.8); /* Cambia el color de fondo cuando se hace clic */
+}
+.hidden-links a{
+    color: white;
+    text-decoration: underline;
+    font-weight: bold;
+    padding: 5px;
+}
+.hidden-links a:hover{
+    color: white;
+    text-decoration: underline;
+    font-weight: bold;
+    padding: 5px;
+    margin: 10px;
+}
+
+#cursos {
+    background-color: #f9f9f9;
+    margin: 2rem;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#cursos h2 {
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-color: #0e0833;
+    text-underline-offset: 5px;
+}
+
+#cursos p {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+#cursos ul {
+    list-style: none;
+    padding: 0;
+}
+
+#cursos ul li {
+    margin-bottom: 10px;
+
+}
+
+#cursos ul li a {
+    text-decoration: none;
+    color: #007bff;
+
+}
+
+#cursos ul li a:hover {
+    text-decoration: underline;
+}
+#registro {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 0 auto;
+    
+    
+}
+
+#registro h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#registro form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+#registro form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+#registro form input,
+#registro form select,
+#registro form button {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+
+}
+
+#registro form button {
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 0 auto;
+    
+}
+
+#registro form button:hover {
+    background-color: #0056b3;
+    t
+
+}
+
+#registro form input[type="checkbox"] {
+    width: auto;
+}
+
+#registro form input[type="file"] {
+    width: auto;
+    padding: 7px;
+}
+
+@media screen and (max-width: 600px) {
+    #registro form {
+        grid-template-columns: 1fr;
+    }
+}
+
+
 
 .footer {
 
@@ -330,3 +520,6 @@ body {
 
 
 }
+html {
+    scroll-behavior: smooth;
+  }
