@@ -9,6 +9,12 @@ body {
     padding: 0;
     background-color: #024059;
 }
+
+#Page {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 .svglogIA-container {
     padding-top: 30px;
     text-align: center;
@@ -20,11 +26,6 @@ body {
     display: inline-block;
 }
 
-
-#Page {
-    max-width: 1200px;
-    margin: 0 auto;
-}
 
 #header {
     background-color: #12265f;
