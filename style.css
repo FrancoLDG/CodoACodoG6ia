@@ -5,25 +5,35 @@
 body {
     font-family: 'Hind Madurai', Arial, sans-serif;
     /* Cambié la fuente predeterminada */
+    height: 100%;
     margin: 0;
     padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #024059;
 }
+
+.svglogIA-container {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    text-align: center;
+}
+#svg-container {
+    width: 25vw; /* 25% del ancho del viewport */
+    height: 25vh; /* 25% del alto del viewport */
+}
+
+.svglogIA-container svg {
+    display: inline-block;
+    text-align: center;
+    max-width: 100%;
+}
+
 
 #Page {
     max-width: 1200px;
     margin: 0 auto;
-}
-
-.svglogIA-container {
-    padding-top: 30px;
-    text-align: center;
-    max-width: 100px; /* Establece el ancho máximo */
-     height: auto;
-}
-
-.svglogIA-container {
-    display: inline-block;
 }
 
 
