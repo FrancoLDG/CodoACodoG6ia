@@ -42,6 +42,11 @@ body {
     color: #fff;
     padding: 10px 0;
     text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
 }
 
 .lista-horizontal a{
@@ -230,6 +235,145 @@ body {
     padding: 7px;
     border-radius: 8px;
 }
+
+.videos-section {
+    background-color:#12265f;
+    padding: 50px 0;
+}
+
+.section-title {
+    font-size: 2em;
+    color: #0f091f;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.videos-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.video-main {
+    flex: 0 0 50%;
+    max-width: 50%;
+    margin-right: 20px;
+}
+
+.video-main .video-wrapper {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%; /* Aspect ratio 16:9 */
+    overflow: hidden;
+}
+
+.video-main .video-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.video-slider {
+    flex: 1;
+    overflow-y: auto;
+}
+
+.slider-inner {
+    max-height: 400px; /* Altura máxima del slider */
+    padding-right: 20px; /* Espacio para el scrollbar vertical */
+}
+
+.video {
+    margin-bottom: 20px;
+    background-color: rgb(160, 153, 153);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.video:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.video-wrapper {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%; /* Aspect ratio 16:9 */
+    overflow: hidden;
+}
+
+.video-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.video-info {
+    padding: 1rem;
+    text-align: center;
+}
+
+.video-title {
+    font-size: 1.5em;
+    color: #000000;
+    margin-bottom: 5px;
+}
+
+.video-description {
+    color: #f1f1f1;
+    line-height: 1.6;
+}
+
+
+.video-slider {
+    overflow: hidden;
+    position: relative;
+}
+
+.slider-inner {
+    display: flex;
+    flex-direction: column;
+    animation: slide-animation 15s linear infinite;
+}
+
+@keyframes slide-animation {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-100%);
+    }
+}
+
+.slider-inner:hover {
+    animation-play-state: paused;
+}
+
+.slider-inner:hover .video {
+    animation-play-state: paused;
+}
+
+.video {
+    margin-bottom: 20px;
+    animation: slide-up 25s linear infinite;
+}
+
+@keyframes slide-up {
+    0%, 100% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    20%, 80% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 
 .videos-seccion {
 
@@ -505,7 +649,8 @@ body {
 
 #registro form button:hover {
     background-color: #0056b3;
-    
+    t
+
 }
 
 #registro form input[type="checkbox"] {
@@ -538,3 +683,26 @@ body {
 html {
     scroll-behavior: smooth;
   }
+
+  @keyframes show {
+	from {
+		opacity: 0;
+		scale: 25%;
+	}
+
+	to {
+		opacity: 1;
+		scale: 100%;
+	}
+}
+
+img {
+	view-timeline-name: --image;
+	view-timeline-axis: block;
+
+	animation-timeline: --image;
+	animation-name: show;
+
+	animation-range: entry 25% cover 50%;
+	animation-fill-mode: both;
+}
