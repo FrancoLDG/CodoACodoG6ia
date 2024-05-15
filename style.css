@@ -11,7 +11,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #024059ad;
+    background-image:linear-gradient(#024059ad, #096f97ad, #024059ad);
 }
 
 .svglogIA-container {
@@ -38,7 +38,7 @@ body {
 
 
 #header {
-    background-color: #12265f;
+    background-image: linear-gradient( #1f1175, #29189b,#1f1175);
     color: #fff;
     padding: 10px 0;
     text-align: center;
