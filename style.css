@@ -11,7 +11,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image:linear-gradient(#024059ad, #096f97ad, #024059ad);
+    background-image: linear-gradient(#024059ad, #096f97ad, #024059ad);
 }
 
 .svglogIA-container {
@@ -19,9 +19,12 @@ body {
     padding-bottom: 70px;
     text-align: center;
 }
+
 #svg-container {
-    width: 25vw; /* 25% del ancho del viewport */
-    height: 25vh; /* 25% del alto del viewport */
+    width: 25vw;
+    /* 25% del ancho del viewport */
+    height: 25vh;
+    /* 25% del alto del viewport */
 }
 
 .svglogIA-container svg {
@@ -38,7 +41,7 @@ body {
 
 
 #header {
-    background-image: linear-gradient( #1f1175, #29189b,#1f1175);
+    background-image: linear-gradient(#1f1175, #29189b, #1f1175);
     color: #fff;
     padding: 10px 0;
     text-align: center;
@@ -49,7 +52,7 @@ body {
     z-index: 1000;
 }
 
-.lista-horizontal a{
+.lista-horizontal a {
     color: #fff;
     text-decoration: none;
 }
@@ -180,13 +183,14 @@ body {
     background-color: #12265f;
     padding: 7px;
     border-radius: 8px;
-}   
-.newsCuadro p{
+}
+
+.newsCuadro p {
     text-align: justify;
     color: #12265f;
     margin-top: 20px;
     margin-bottom: 20px;
-   
+
 }
 
 .Noticias img {
@@ -201,7 +205,6 @@ body {
     object-fit: cover;
     object-position: center;
     border-radius: 1rem
-
 }
 
 @media only screen and (max-width: 767px) {
@@ -238,7 +241,7 @@ body {
 }
 
 .videos-section {
-    background-color:#12265f;
+    background-color: #12265f;
     padding: 50px 0;
 }
 
@@ -264,7 +267,8 @@ body {
 .video-main .video-wrapper {
     position: relative;
     width: 100%;
-    padding-top: 56.25%; /* Aspect ratio 16:9 */
+    padding-top: 56.25%;
+    /* Aspect ratio 16:9 */
     overflow: hidden;
 }
 
@@ -283,8 +287,10 @@ body {
 }
 
 .slider-inner {
-    max-height: 400px; /* Altura máxima del slider */
-    padding-right: 20px; /* Espacio para el scrollbar vertical */
+    max-height: 400px;
+    /* Altura máxima del slider */
+    padding-right: 20px;
+    /* Espacio para el scrollbar vertical */
 }
 
 .video {
@@ -301,7 +307,8 @@ body {
 .video-wrapper {
     position: relative;
     width: 100%;
-    padding-top: 56.25%; /* Aspect ratio 16:9 */
+    padding-top: 56.25%;
+    /* Aspect ratio 16:9 */
     overflow: hidden;
 }
 
@@ -346,6 +353,7 @@ body {
     0% {
         transform: translateY(0);
     }
+
     100% {
         transform: translateY(-100%);
     }
@@ -365,11 +373,15 @@ body {
 }
 
 @keyframes slide-up {
-    0%, 100% {
+
+    0%,
+    100% {
         opacity: 0;
         transform: translateY(50px);
     }
-    20%, 80% {
+
+    20%,
+    80% {
         opacity: 1;
         transform: translateY(0);
     }
@@ -514,36 +526,51 @@ body {
     object-fit: fill;
     border-radius: 1rem;
 }
+
 /* Estilos para el botón hover */
 .ia-container img:hover {
-    filter: brightness(50%); /* Oscurece la imagen al 50% */
-    cursor: pointer; /* Cambia el cursor a un puntero al pasar el mouse sobre la imagen */
-    position: relative; /* Establece la posición relativa para poder posicionar el botón */
+    filter: brightness(50%);
+    /* Oscurece la imagen al 50% */
+    cursor: pointer;
+    /* Cambia el cursor a un puntero al pasar el mouse sobre la imagen */
+    position: relative;
+    /* Establece la posición relativa para poder posicionar el botón */
 }
 
 /* Estilos para el botón */
 .ia-container img:hover::after {
-    content: 'Ver más'; /* Texto del botón */
-    position: absolute; /* Establece la posición absoluta para posicionar el botón */
-    top: 50%; /* Lo coloca en la mitad superior de la imagen */
-    left: 50%; /* Lo coloca en el centro horizontalmente de la imagen */
-    transform: translate(-50%, -50%); /* Lo mueve hacia arriba y hacia la izquierda para centrarlo */
-    background-color: rgba(255, 255, 255, 0.5); /* Color de fondo semi-transparente para el botón */
-    padding: 10px; /* Añade espacio alrededor del texto */
-    border-radius: 5px; /* Redondea las esquinas del botón */
+    content: 'Ver más';
+    /* Texto del botón */
+    position: absolute;
+    /* Establece la posición absoluta para posicionar el botón */
+    top: 50%;
+    /* Lo coloca en la mitad superior de la imagen */
+    left: 50%;
+    /* Lo coloca en el centro horizontalmente de la imagen */
+    transform: translate(-50%, -50%);
+    /* Lo mueve hacia arriba y hacia la izquierda para centrarlo */
+    background-color: rgba(255, 255, 255, 0.5);
+    /* Color de fondo semi-transparente para el botón */
+    padding: 10px;
+    /* Añade espacio alrededor del texto */
+    border-radius: 5px;
+    /* Redondea las esquinas del botón */
 }
 
 /* Estilos para el botón hover cuando está siendo clickeado */
 .ia-container img:hover::after:active {
-    background-color: rgba(255, 255, 255, 0.8); /* Cambia el color de fondo cuando se hace clic */
+    background-color: rgba(255, 255, 255, 0.8);
+    /* Cambia el color de fondo cuando se hace clic */
 }
-.hidden-links a{
+
+.hidden-links a {
     color: white;
     text-decoration: underline;
     font-weight: bold;
     padding: 5px;
 }
-.hidden-links a:hover{
+
+.hidden-links a:hover {
     color: white;
     text-decoration: underline;
     font-weight: bold;
@@ -598,6 +625,7 @@ body {
 #cursos ul li a:hover {
     text-decoration: underline;
 }
+
 #registro {
     background-color: #f9f9f9;
     padding: 20px;
@@ -605,8 +633,9 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     max-width: 500px;
     margin: 0 auto;
-    
-    
+    margin-bottom: 25px;
+
+
 }
 
 #registro h2 {
@@ -645,12 +674,11 @@ body {
     cursor: pointer;
     transition: background-color 0.3s ease;
     margin: 0 auto;
-    
+
 }
 
 #registro form button:hover {
     background-color: #0056b3;
-    t
 
 }
 
@@ -681,29 +709,30 @@ body {
 
 
 }
+
 html {
     scroll-behavior: smooth;
-  }
+}
 
-  @keyframes show {
-	from {
-		opacity: 0;
-		scale: 25%;
-	}
+@keyframes show {
+    from {
+        opacity: 0;
+        scale: 25%;
+    }
 
-	to {
-		opacity: 1;
-		scale: 100%;
-	}
+    to {
+        opacity: 1;
+        scale: 100%;
+    }
 }
 
 img {
-	view-timeline-name: --image;
-	view-timeline-axis: block;
+    view-timeline-name: --image;
+    view-timeline-axis: block;
 
-	animation-timeline: --image;
-	animation-name: show;
+    animation-timeline: --image;
+    animation-name: show;
 
-	animation-range: entry 25% cover 50%;
-	animation-fill-mode: both;
+    animation-range: entry 25% cover 50%;
+    animation-fill-mode: both;
 }
