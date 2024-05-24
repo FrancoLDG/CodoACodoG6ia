@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&display=swap');
 
 @import url(./historia.css);
+@import url(./carrusel.css);
 
 body {
     font-family: 'Hind Madurai', Arial, sans-serif;
@@ -786,4 +787,30 @@ img {
 .radio-group label {
     display: flex;
     align-items: center;
+}
+
+.carousel-caption {
+    bottom: 20px;
+}
+
+
+
+@media (max-width: 768px) {
+    .carousel-caption h5 {
+        font-size: 4vw;
+    }
+
+    .carousel-caption p {
+        font-size: 3vw;
+    }
+}
+
+@media (max-width: 480px) {
+    .carousel-caption h5 {
+        font-size: 5vw;
+    }
+
+    .carousel-caption p {
+        font-size: 4vw;
+    }
 }
