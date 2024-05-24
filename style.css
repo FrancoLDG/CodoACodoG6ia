@@ -50,6 +50,7 @@ body {
 
 .blur-overlay p {
     text-align: justify;
+    padding: 20px;
 }
 
 #svg-container {
