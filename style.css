@@ -539,6 +539,7 @@ body {
 }
 
 .ia-container {
+
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 10px;
@@ -546,6 +547,18 @@ body {
     justify-content: center;
     margin-top: 20px;
 
+}
+
+@media screen and (max-width: 786px) {
+    .ia-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .ia-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
 
 .ia-container .ia-box {
@@ -559,12 +572,14 @@ body {
 }
 
 .ia-container img {
-
+    margin: 15px;
     height: 200px;
     width: 330px;
     margin-bottom: 10px;
     object-fit: fill;
     border-radius: 1rem;
+    transition: transform 0.3s ease;
+    transform-origin: center center;
 }
 
 /* Estilos para el botón hover */
@@ -575,6 +590,8 @@ body {
     /* Cambia el cursor a un puntero al pasar el mouse sobre la imagen */
     position: relative;
     /* Establece la posición relativa para poder posicionar el botón */
+    transform: scale(1.2);
+
 }
 
 /* Estilos para el botón */
