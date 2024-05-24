@@ -48,6 +48,10 @@ body {
     /* Compatibilidad con Safari */
 }
 
+.blur-overlay p {
+    text-align: justify;
+}
+
 #svg-container {
     width: 25vw;
     /* 25% del ancho del viewport */
