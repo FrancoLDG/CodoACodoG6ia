@@ -36,6 +36,10 @@ body {
     text-align: center;
 }
 
+.videos2-container {
+    background: linear-gradient(to bottom, rgba(238, 130, 238, 0.8), rgba(238, 130, 238, 0.2));
+}
+
 .blur-overlay {
     position: relative;
     top: 0;
@@ -263,7 +267,7 @@ body {
     text-align: center;
     color: #fff;
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
     font-size: 20px;
     font-weight: bold;
     text-transform: uppercase;
@@ -276,6 +280,8 @@ body {
 .videos-section {
     background-color: #12265f;
     padding: 50px 0;
+    background: linear-gradient(to bottom, rgba(238, 130, 238, 0.8), rgba(238, 130, 238, 0.2));
+
 }
 
 .section-title {
