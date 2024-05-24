@@ -775,3 +775,15 @@ img {
     animation-range: entry 25% cover 50%;
     animation-fill-mode: both;
 }
+
+.radio-group {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+    /* Espacio entre las columnas y filas */
+}
+
+.radio-group label {
+    display: flex;
+    align-items: center;
+}
