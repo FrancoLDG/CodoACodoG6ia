@@ -20,6 +20,22 @@
 
 }
 
+@media (max-width: 768px) {
+    #titulo-historia {
+
+        font-size: 24px;
+
+    }
+}
+
+@media (max-width: 400px) {
+    #titulo-historia {
+
+        font-size: 16px;
+
+    }
+}
+
 .titulo {
     background-color: #0e0833;
     color: white;

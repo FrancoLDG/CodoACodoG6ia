@@ -58,6 +58,39 @@ body {
     padding: 20px;
 }
 
+@media (max-width: 768px) {
+    #carouselExampleCaptions {
+
+        /* Ajustado para un ancho completo */
+        max-width: 768px;
+        /* Aumentado el ancho máximo */
+
+        /* Cambiado para que el contenedor sea auto-ajustable */
+        margin: auto;
+
+    }
+}
+
+@media (max-width: 400px) {
+    #carouselExampleCaptions {
+        display: block;
+        /* Ajustado para un ancho completo */
+        max-width: 400px;
+        /* Aumentado el ancho máximo */
+
+        /* Cambiado para que el contenedor sea auto-ajustable */
+        margin: auto;
+    }
+
+    .carousel-caption {
+        display: block;
+        background-color: rgba(251, 247, 247, 0.5);
+        padding: 10px;
+
+    }
+}
+
+
 #svg-container {
     width: 25vw;
     /* 25% del ancho del viewport */
