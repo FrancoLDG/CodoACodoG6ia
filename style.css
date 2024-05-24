@@ -36,6 +36,18 @@ body {
     text-align: center;
 }
 
+.blur-overlay {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(50px);
+    /* Ajusta el valor para más o menos desenfoque */
+    -webkit-backdrop-filter: blur(10px);
+    /* Compatibilidad con Safari */
+}
+
 #svg-container {
     width: 25vw;
     /* 25% del ancho del viewport */
