@@ -580,6 +580,8 @@ body {
     border-radius: 1rem;
     transition: transform 0.3s ease;
     transform-origin: center center;
+
+
 }
 
 /* Estilos para el botón hover */
@@ -591,6 +593,7 @@ body {
     position: relative;
     /* Establece la posición relativa para poder posicionar el botón */
     transform: scale(1.2);
+
 
 }
 
@@ -688,16 +691,21 @@ body {
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    max-width: 500px;
+    max-width: 1200px;
     margin: 0 auto;
     margin-bottom: 25px;
+    background: linear-gradient(to bottom, transparent, violet, transparent);
+
+
+    color: white;
+
 
 
 }
 
 #registro h2 {
     font-size: 24px;
-    color: #333;
+    color: white;
     margin-bottom: 20px;
 }
 
