@@ -22,6 +22,10 @@ body {
     background: linear-gradient(to bottom, transparent, violet, transparent)
 }
 
+#titulo-noticias {
+    margin-top: 50px;
+}
+
 .svglogIA-container {
     background: linear-gradient(to bottom, violet, transparent);
 }
