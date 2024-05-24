@@ -646,6 +646,14 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+@media screen and (max-width: 600px) {
+    #cursos {
+        margin: auto;
+        max-width: 390px;
+
+    }
+}
+
 #cursos h2 {
     color: #333;
     margin-bottom: 20px;
