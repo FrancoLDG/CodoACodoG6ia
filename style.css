@@ -757,8 +757,10 @@ body {
 }
 
 @media screen and (max-width: 600px) {
-    #registro form {
+    #registro {
         grid-template-columns: 1fr;
+        max-width: 390px;
+
     }
 }
 
