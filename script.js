@@ -10,14 +10,14 @@ function validarFormulario() {
     const close=document.getElementById('close');   
     
     if (nombre === "" || email === "" || telefono === "" || interes === "" || !sexo || !terminos) {}
-       return(false);
+       return false;
     else {
         open.addEventListener('click', ()=>{
             modal_container.classList.add('show');
-        })
+        });
         close.addEventListener('click', () =>{
             modal_container.classList.remove('show');
-        })
-        return(true);
+        });
+        return true;
     }
 }
