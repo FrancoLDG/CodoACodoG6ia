@@ -747,14 +747,14 @@ body {
     width: 25%;
     background-color: #007bff;
     color: #fff;
-    font-size: 16px;
+    font-size: 20px;
     border: none;
     cursor: pointer;
-    transition: background-color 0.3s ease;
-    margin: 0 auto;
+    transition: background-color 0.5s ease;
+    margin: auto auto;
     border-radius: 5px;
     box-sizing: border-box;
-
+    font-weight: bold;
 }
 
 #registro form button:hover {
@@ -771,6 +771,29 @@ body {
     width: auto;
     padding: 7px;
 }
+
+.modal-container{
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.3);
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+}
+
+/*.modal {
+    background-color: #ffffff;
+    width: 600px;
+    max-width: 100%;
+    padding: 30px 50px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}*/
 
 @media screen and (max-width: 600px) {
     #registro form {
