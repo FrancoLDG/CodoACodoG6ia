@@ -764,15 +764,59 @@ body {
 
 
 
+
 .footer {
-
     background-color: #0e0833;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
+    padding: 20px 0 0 0;
     margin-bottom: 0;
+}
 
+.footer-row {
+    display: flex;
+    flex-wrap: wrap;
+}
 
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-links {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.footer-links h4 {
+    font-size: 20px;
+    color: #ffffff;
+    margin-bottom: 25px;
+    font-weight: 500;
+    border-bottom: 2px solid #00c3ff;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+.social-link a {
+    display: inline-block;
+    min-height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 15px 15px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all .5s ease;
+}
+
+.social-link a:hover {
+    background-color: #00c3ff
+}
+
+.copyright {
+    color: #ffffff;
+    font-size: 10px;
+    padding: 20px 0 0 0;
 }
 
 html {
