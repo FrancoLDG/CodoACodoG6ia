@@ -62,6 +62,21 @@ body {
     display: flex;
     justify-content: center;
 }
+#check {
+    display: none;
+    justify-content: center;
+    align-items: left;
+    margin-top: 20px;
+}
+.checkbtn {
+    font-size: 40px;
+    color: #fff;
+    display: none;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+}
+
 
 .lista-horizontal {
     list-style-type: none;
@@ -82,6 +97,128 @@ body {
 .lista-horizontal a:hover {
     background-color: #007bff;
     color: #1a1919;
+}
+@media (max-width: 768px) {
+    .checkbtn {
+        display: block;
+    }
+    #header {
+        background-image: linear-gradient(to bottom, #1f1175, #29189b8b, #1e117500);
+        color: #fff;
+        padding: 0.2rem 0;  
+    }
+    
+    #info {
+        justify-content: right;
+    }
+    .lista-horizontal {
+        
+        display: none;
+        margin-left: 0;
+        color: #fff;
+        font-weight: bold;
+        font-display: bold;
+        text-transform: uppercase;
+        transition: all .5s ease;
+        background-color: linear-gradient(to bottom, #1e1175f5, #29189bcb, #1e1175ec);
+        padding: 15px;
+        text-align: center;
+        
+       
+    }
+   
+    
+    .lista-horizontal a:hover {
+        background-color: #007bff;
+        color: #1a1919;
+    }
+    #check:checked ~ #info .lista-horizontal {
+        display: block;
+        
+    }
+    .lista-horizontal li {
+        display: block;
+        background-color: #1e1175dc;
+        padding: 5px;
+        border-radius: 3rem;
+        
+    }
+    .carousel-item img{
+        height: 310px !important;
+        justify-content: center;
+    }
+    #historia h2{
+        font-size: 20px;
+        width: 100%;
+    
+    }
+    .Videos-Titulo {
+        font-size: 20px;
+        width: 100%;
+    }
+    .container h2 {
+        font-size: 20px;
+    }
+    .videos-section {
+        padding: 20px 0;
+        grid-template-columns: repeat(1, 1fr) !important;
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+    .container {
+        grid-template-columns: repeat(1, 1fr) !important;
+        flex-direction: column !important;
+        align-items: center !important;
+
+    }
+    .video-main {
+        height: 300px !important;
+        margin-right: 0 !important;
+        align-items: center !important;
+    }
+    .video .video-info {
+        display: none;
+    }
+    @keyframes slide-animation{
+        0% {
+            transform: translateY(0);
+        }
+        0% {
+            transform: translateY(0);
+        }
+    }
+   .separador-ias{
+    height: auto;
+    width: 100%;
+    align-items: center;
+   }
+   .separador-ias h3{
+    font-size: 13px !important;
+   }
+    .ia-container img{
+     height: 150px;
+     width: 250px;
+     margin-bottom: 10px;
+     object-fit: fill;
+     border-radius: 1rem;
+     transition: transform 0.3s ease;
+     transform-origin: center center;
+    }
+    .ia-container {
+        grid-template-columns: repeat(1, 1fr) !important;
+        padding: 3px !important;
+    }
+    #cursos {
+        margin: 2rem !important;
+        padding: 60px !important;
+        height: 300px !important;
+
+    }
+    #cursos h2 p{
+        justify-content: center;
+        font-size: 15px !important;
+        align-items: center;
+    }
 }
 
 .Logo img {
@@ -795,4 +932,151 @@ img {
 
     animation-range: entry 25% cover 50%;
     animation-fill-mode: both;
+}
+
+.radio-group {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+    /* Espacio entre las columnas y filas */
+}
+
+.radio-group label {
+    display: flex;
+    align-items: center;
+}
+
+.carousel-caption {
+    bottom: 20px;
+}
+
+
+
+@media (max-width: 768px) {
+    .carousel-caption h5 {
+        font-size: 4vw;
+    }
+
+    .carousel-caption p {
+        font-size: 3vw;
+    }
+}
+
+@media (max-width: 480px) {
+    .carousel-caption h5 {
+        font-size: 5vw;
+    }
+
+    .carousel-caption p {
+        font-size: 4vw;
+    }
+}
+@media (max-width: 800px) {
+    .checkbtn {
+        display: block;
+    }
+    #header {
+        background-image: linear-gradient(to bottom, #1f1175, #29189b8b, #1e117500);
+        color: #fff;
+        padding: 0.2rem 0;  
+    }
+    
+    #info {
+        justify-content: right;
+    }
+    .lista-horizontal {
+        
+        display: none;
+        margin-left: 0;
+        color: #fff;
+        font-weight: bold;
+        font-display: bold;
+        text-transform: uppercase;
+        transition: all .5s ease;
+        background-color: linear-gradient(to bottom, #1e1175f5, #29189bcb, #1e1175ec);
+        padding: 15px;
+        text-align: center;
+        
+       
+    }
+   
+    
+    .lista-horizontal a:hover {
+        background-color: #007bff;
+        color: #1a1919;
+    }
+    #check:checked ~ #info .lista-horizontal {
+        display: block;
+        
+    }
+    .lista-horizontal li {
+        display: block;
+        background-color: #1e1175dc;
+        padding: 5px;
+        border-radius: 3rem;
+        
+    }
+    .carousel-item img{
+        height: 310px !important;
+        justify-content: center;
+    }
+    #historia h2{
+        font-size: 20px;
+        width: 100%;
+    
+    }
+    .Videos-Titulo {
+        font-size: 20px;
+        width: 100%;
+    }
+    .container h2 {
+        font-size: 20px;
+    }
+    .videos-section {
+        padding: 20px 0;
+        align-items: center;
+    }
+    .container {
+        
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .video-main {
+        height: 300px;
+        margin-right: 0;
+        align-items: center !important;
+    }
+    .video .video-info {
+        display: none;
+    }
+    @keyframes slide-animation{
+        0% {
+            transform: translateY(0);
+        }
+        0% {
+            transform: translateY(0);
+        }
+    }
+   .separador-ias{
+    height: auto;
+    width: 100%;
+    align-items: center;
+   }
+   .separador-ias h3{
+    font-size: 13px !important;
+   }
+    .ia-container img{
+     height: 150px;
+     width: 250px;
+     margin-bottom: 10px;
+     object-fit: fill;
+     border-radius: 1rem;
+     transition: transform 0.3s ease;
+     transform-origin: center center;
+    }
+    .ia-container {
+        grid-template-columns: repeat(1, 1fr) !important;
+    }
+   
 }
