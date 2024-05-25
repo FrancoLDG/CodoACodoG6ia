@@ -5,24 +5,19 @@ function validarFormulario() {
     var interes = document.getElementById("interes").value;
     var sexo = document.querySelector('input[name="sexo"]:checked');
     var terminos = document.getElementById("terminos").checked;
-    const btnAbrirModal= document.querySelector("#btn-abrir-modal")
-    const btnCerrarModal= document.querySelector("#btn-cerrar-modal")
-    const modal= document.querySelector("#modal")
+    const open=document.getElementById('open');
+    const modal_container=document.getElementById('modal_container');
+    const close=document.getElementById('close');   
     
-    if (nombre === "" || email === "" || telefono === "" || interes === "" || !sexo || !terminos) {
-        alert("Por favor completa todos los campos obligatorios.")}
-    else{
-
-        btnAbrirModal.addEventListener("click",()=>{
-            modal.showModal();
+    if (nombre === "" || email === "" || telefono === "" || interes === "" || !sexo || !terminos) {}
+       return(false);
+    else {
+        open.addEventListener('click', ()=>{
+            modal_container.classList.add('show');
         })
-
-        btnCerrarModal.addEventListener("click",()=>{
-            modal.close();
+        close.addEventListener('click', () =>{
+            modal_container.classList.remove('show');
         })
-        
-        return false;
+        return(true);
     }
-    
-    return true;
 }

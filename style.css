@@ -774,7 +774,7 @@ body {
 
 .modal-container{
     display: flex;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.5);
     align-items: center;
     justify-content: center;
     position: fixed;
@@ -783,9 +783,15 @@ body {
     left: 0;
     height: 100vh;
     width: 100vw;
+    opacity: 0;
 }
 
-/*.modal {
+.show{
+    pointer-events: auto;
+    opacity: 1;
+}
+
+.modal {
     background-color: #ffffff;
     width: 600px;
     max-width: 100%;
@@ -793,7 +799,7 @@ body {
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     text-align: center;
-}*/
+}
 
 @media screen and (max-width: 600px) {
     #registro form {
