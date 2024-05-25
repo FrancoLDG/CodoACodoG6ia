@@ -1,0 +1,99 @@
+.carousel-container {
+    position: relative;
+    width: 100%;
+    /* Ajustado para un ancho completo */
+    max-width: 1200px;
+    /* Aumentado el ancho máximo */
+    height: auto;
+    /* Cambiado para que el contenedor sea auto-ajustable */
+    margin: auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.carousel-slide {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    min-width: 100%;
+    position: relative;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
+    /* Ajusta esta altura según tus necesidades */
+    object-fit: contain;
+    /* Asegura que la imagen completa se muestre */
+    display: block;
+}
+
+.carousel-caption {
+    text-align: center;
+    padding: 70px;
+    background: linear-gradient(to bottom, rgba(238, 130, 238, 0.8), rgba(238, 130, 238, 0.2));
+    color: white;
+    border-radius: 0 0 10px 10px;
+}
+
+.carousel-caption h5 {
+    text-align: center;
+}
+
+.carousel-caption p {
+    text-align: justify;
+}
+
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+@media (max-width: 768px) {
+    .carousel-container {
+        position: relative;
+        width: 100%;
+        /* Ajustado para un ancho completo */
+        max-width: 768px;
+        /* Aumentado el ancho máximo */
+        height: auto;
+        /* Cambiado para que el contenedor sea auto-ajustable */
+        margin: auto;
+        overflow: hidden;
+        border-radius: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .carousel-container {
+        position: relative;
+        width: 100%;
+        /* Ajustado para un ancho completo */
+        max-width: 390px;
+        /* Aumentado el ancho máximo */
+        height: auto;
+        /* Cambiado para que el contenedor sea auto-ajustable */
+        margin: auto;
+        overflow: hidden;
+        border-radius: 10px;
+    }
+}
