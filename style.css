@@ -151,6 +151,12 @@ body {
     font-weight: bold;
     text-transform: uppercase;
     cursor: pointer;
+    transition: all .5s ease;
+}
+
+.lista-horizontal a:hover {
+    background-color: #007bff;
+    color: #1a1919;
 }
 
 .Logo img {
@@ -316,6 +322,13 @@ body {
 }
 
 .videos-section {
+    background-color: #12265f;
+    padding: 50px 0;
+    background: linear-gradient(to bottom, rgba(238, 130, 238, 0.8), rgba(238, 130, 238, 0.2));
+
+}
+
+.ias-section {
     background-color: #12265f;
     padding: 50px 0;
     background: linear-gradient(to bottom, rgba(238, 130, 238, 0.8), rgba(238, 130, 238, 0.2));
@@ -766,8 +779,7 @@ body {
 }
 
 #registro form input,
-#registro form select,
-#registro form button {
+#registro form select{
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
@@ -777,14 +789,17 @@ body {
 }
 
 #registro form button {
+    width: 25%;
     background-color: #007bff;
     color: #fff;
-    font-size: 16px;
+    font-size: 20px;
     border: none;
     cursor: pointer;
-    transition: background-color 0.3s ease;
-    margin: 0 auto;
-
+    transition: background-color 0.5s ease;
+    margin: auto auto;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-weight: bold;
 }
 
 #registro form button:hover {
@@ -846,12 +861,12 @@ body {
 
 .social-link a {
     display: inline-block;
-    min-height: 40px;
-    width: 40px;
+    min-height: 50px;
+    width: 50px;
     background-color: rgba(255, 255, 255, 0.2);
     margin: 0 15px 15px 0;
     text-align: center;
-    line-height: 40px;
+    line-height: 50px;
     border-radius: 50%;
     color: #ffffff;
     transition: all .5s ease;
@@ -863,7 +878,7 @@ body {
 
 .copyright {
     color: #ffffff;
-    font-size: 10px;
+    font-size: 12px;
     padding: 20px 0 0 0;
 }
 
